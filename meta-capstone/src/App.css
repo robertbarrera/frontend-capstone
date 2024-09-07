@@ -29,6 +29,10 @@ header img {
   text-decoration: none;
 }
 
+.card {
+  background-color: EDEFEE;
+}
+
 footer {
   background-color: #495E57;
   color: white;
