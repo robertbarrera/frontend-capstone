@@ -2,7 +2,7 @@
 
 const Footer = () => {
     return (
-        <footer>
+        <footer class="grid">
             <img src="/restaurant.jpg"
             alt="Little Lemon Restaurant" />
             <section class="doormat">

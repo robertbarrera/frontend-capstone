@@ -16,7 +16,7 @@ nav ul {
   display: flex;
   flex-direction: row;
 }
-header nav ul li {
+header * li {
   margin-right: 20px;
 }
 
@@ -36,15 +36,22 @@ header img {
 footer {
   background-color: #495E57;
   color: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: start;
   padding: 20px;
+}
+
+.grid {
+  --min: 30ch;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
+  gap: 10px;
 }
 
 footer section {
   padding: 20px 50px;
+}
+
+footer section:last-of-type {
+  padding-right: 0;
 }
 
 footer img {
@@ -68,4 +75,15 @@ footer ul {
 
 footer .link {
   color: white;
+}
+
+@media screen and (maxwidth: 500px) {
+  header{
+    display: block;
+  }
+
+  nav ul {
+    display: block;
+  }
+  
 }
