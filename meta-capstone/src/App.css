@@ -1,6 +1,28 @@
 * {
   margin: 0;
+  padding: 0;
+}
+
+html {
   font-size: 10px;
+}
+
+body {
+  font-size: 1.4rem;
+  font-family: Georgia, 'Times New Roman', Times, serif; /*Could not import Karla font*/
+}
+
+h1, h2 {
+  font-family: Markazi;
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+img {
+  border-radius: 1.6rem;
 }
 
 header {
@@ -9,21 +31,21 @@ header {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 10px;
+  padding: 1rem;
 }
 
-nav ul {
+.navLinks {
   list-style: none;
   display: flex;
   flex-direction: row;
 }
 
-header li {
-  margin-right: 20px;
+.navLinks li {
+  margin-right: 2rem;
 }
 
 header img {
-  height: 70px;
+  height: 7rem;
 }
 
 .link {
@@ -38,37 +60,35 @@ header img {
 footer {
   background-color: #495E57;
   color: white;
-  padding: 20px;
 }
 
 .grid {
   --min: 30ch;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
-  gap: 10px;
-  padding: 0 20px;
+  gap: 1rem;
+  padding: 1rem 2rem;
 }
 
-footer section {
-  padding: 20px 50px;
+.footerSection {
+  padding: 2rem 0px;
 }
 
-footer section:last-of-type {
+.footerSection:last-of-type {
   padding-right: 0;
 }
 
 footer img {
-  height: 160px;
-  width: 100px;
+  height: 18rem;
+  width: 12rem;
   object-fit: cover;
-  border-radius: 16px;
 }
 
 footer h3 {
   color: #f4ce14;
 }
 
-footer ul {
+.footerList {
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -87,20 +107,20 @@ footer .link {
     align-items: center;
   }
 
-  header ul {
+  .navLinks {
     flex-direction: column;
     align-items: center;
     padding: 0px;
   }
 
-  header li {
+  .navLinks li {
     margin-right: 0;
-    margin-bottom: 10px;
+    margin-bottom: 1rem;
   }
 
   header img {
-    height: 50px;
-    margin-bottom: 10px;
+    height: 5rem;
+    margin-bottom: 1rem;
   }
 
   .grid {
@@ -111,19 +131,19 @@ footer .link {
     justify-items: center;
   }
 
-  footer ul {
+  .footerList {
     flex-direction: column;
     align-items: center;
   }
 
-  footer section {
+  .footerSection {
     padding: 5px 0px;
   }
 
   footer img {
-    height: 120px;
-    width: 80px;
-    margin-top: 10px;
+    height: 12rem;
+    width: 8rem;
+    margin-top: 1rem;
   }
 }
 
