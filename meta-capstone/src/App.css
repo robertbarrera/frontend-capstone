@@ -125,6 +125,7 @@ footer .link {
 
   .grid {
     grid-template-columns: 1fr;
+    /*grid-auto-flow: row;*/
   }
 
   footer {
