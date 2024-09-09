@@ -5,11 +5,11 @@ const Nav = () => {
         <nav>
             <ul>
                 <li><Link to="/" class="link">Home</Link></li>
-                <li><a href="/about" class="link">About</a></li>
-                <li><a href="/about" class="link">Menu</a></li>
-                <li><a href="/blog" class="link">Reservations</a></li>
-                <li><a href="/blog" class="link">Order Online</a></li>
-                <li><a href="/blog" class="link">Login</a></li>
+                <li><Link to="/About" class="link">About</Link></li>
+                <li><Link to="/Specials" class="link">Menu</Link></li>
+                <li><Link to="/Bookings" class="link">Reservations</Link></li>
+                <li><Link to="/OrderOnline" class="link">Order Online</Link></li>
+                <li><Link to="/Login" class="link">Login</Link></li>
             </ul>
         </nav>
     );
