@@ -1,8 +1,14 @@
-
+import Hero from "./Hero";
+import Specials from "./specials";
+import CustomersSay from "./CustomersSay";
 
 const Main = () => {
     return (
-        <main></main>
+        <main>
+            <Hero />
+            <Specials />
+            <CustomersSay />
+        </main>
     );
 }
 
