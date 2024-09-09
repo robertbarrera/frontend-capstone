@@ -1,5 +1,5 @@
 import Hero from "./Hero";
-import Specials from "./specials";
+import Specials from "./Specials";
 import CustomersSay from "./CustomersSay";
 
 const Main = () => {
