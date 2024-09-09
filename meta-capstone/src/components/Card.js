@@ -8,7 +8,7 @@ const Card = (props) => {
                 {image && <img src={image} alt="User who wrote this review" className="reviewImage" />}
                 {userName && <p>{userName}</p>}
                 {description && <p>{description}</p>}
-            </section>     
+            </section>
         ) : (
             <section className="card specialsCard">
                 {image && <img src={image} alt="One of this weeks special food items" className="specialsImage" />}

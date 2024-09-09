@@ -23,6 +23,36 @@ h3 {
 
 img {
   border-radius: 1.6rem;
+  height: 7rem;
+}
+
+.reviewContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the contents horizontally */
+  justify-content: center;
+}
+
+.reviews {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Ensure 3 equal columns */
+  gap: 1rem;
+  padding: 1rem;
+  margin: 0; /* Remove any margin */
+  width: 60%; /* Take full width of the container */ /*ADJUST ME FOR REVIEW GRID CARDS*/
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.review {
+  background-color: black;
+}
+
+.reviewCard {
+  width: 100%; /* Allow the card to take up full width of the grid cell */
+  max-width: 20rem; /* Set a maximum width for the card */
+  margin: 0 auto; /* Center each card in its column */
+  border-radius: 1.6rem;
+  text-align: center;
 }
 
 header {
@@ -70,6 +100,7 @@ footer {
   padding: 1rem 2rem;
 }
 
+
 .footerSection {
   padding: 2rem 0px;
 }
@@ -99,6 +130,7 @@ footer h3 {
 footer .link {
   color: white;
 }
+
 
 /* Media Queries for more specific mobile responsiveness */
 @media screen and (max-width: 600px) {
