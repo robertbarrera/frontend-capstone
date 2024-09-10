@@ -2,7 +2,8 @@
 
 const Footer = () => {
     return (
-        <footer className="grid">
+        <footer>
+            <section className= "footerContainer grid">
             <img src="/restaurant.jpg"
             alt="Little Lemon Restaurant" />
             <section className="footerSection">
@@ -33,6 +34,7 @@ const Footer = () => {
                         <li><a href="https://www.instagram.com" target="_blank" rel="noreferrer" className="link">Instagram</a></li>
                         <li><a href="https://www.Facebook.com" target="_blank" rel="noreferrer" className="link">Facebook</a></li>
                     </ul>
+            </section>
             </section>
         </footer>
     );

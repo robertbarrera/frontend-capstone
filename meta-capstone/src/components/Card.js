@@ -4,9 +4,9 @@ const Card = (props) => {
     return (
         type==="review" ? (
             <section className="card reviewCard">
-                {rating && <p>Rating: {rating}</p>}
+                {rating && <h3>Rating: {rating}</h3>}
                 {image && <img src={image} alt="User who wrote this review" className="reviewImage" />}
-                {userName && <p>{userName}</p>}
+                {userName && <h4>{userName}</h4>}
                 {description && <p>{description}</p>}
             </section>
         ) : (

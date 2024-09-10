@@ -26,11 +26,19 @@ img {
   height: 7rem;
 }
 
+.bg {
+  background-color: #EDEFEE;
+  border-radius: 1.6rem;
+}
+
 .reviewContainer {
   display: flex;
   flex-direction: column;
   align-items: center; /* Center the contents horizontally */
   justify-content: center;
+  width: 85%;
+  padding-top: 10rem;
+  margin: 0 auto;
 }
 
 .reviews {
@@ -39,15 +47,11 @@ img {
   gap: 1rem;
   padding: 1rem;
   margin: 0; /* Remove any margin */
-  width: 60%; /* Take full width of the container */ /*ADJUST ME FOR REVIEW GRID CARDS*/
+  width: 80%; /* Take full width of the container */ /*ADJUST ME FOR REVIEW GRID CARDS*/
   box-sizing: border-box; /* Include padding in width calculation */
 }
 
-.review {
-  background-color: black;
-}
-
-.reviewCard {
+.reviewCard, .specialsCard {
   width: 100%; /* Allow the card to take up full width of the grid cell */
   max-width: 20rem; /* Set a maximum width for the card */
   margin: 0 auto; /* Center each card in its column */
@@ -87,19 +91,60 @@ header img {
   background-color: #EDEFEE;
 }
 
+.card p, h3 {
+  padding: .5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 30ch), 1fr));
+  gap: 1rem;
+  padding: 1rem 2rem;
+}
+
+.specialsContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 85%;
+  justify-content: center;
+
+}
+
+.specialsHead, .specialsHeading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 3rem 2rem;
+}
+
+.specialsCard {
+  max-width: 40rem;
+}
+
+.specialsCard img {
+  width: 100%;
+  height: 26.5rem;
+  object-fit: cover;
+}
+
+.foods {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
 footer {
   background-color: #495E57;
   color: white;
 }
 
-.grid {
-  --min: 30ch;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
-  gap: 1rem;
-  padding: 1rem 2rem;
+.footerContainer {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 }
-
 
 .footerSection {
   padding: 2rem 0px;
@@ -159,9 +204,28 @@ footer .link {
     grid-template-columns: 1fr;
     /*grid-auto-flow: row;*/
   }
+  .foods {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .reviewContainer {
+    display: none;
+  }
 
   footer {
     justify-items: center;
+  }
+
+  footer img {
+    display: none;
+  }
+
+  .footerContainer{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .footerList {
@@ -171,6 +235,7 @@ footer .link {
 
   .footerSection {
     padding: 5px 0px;
+    text-align: center;
   }
 
   footer img {
