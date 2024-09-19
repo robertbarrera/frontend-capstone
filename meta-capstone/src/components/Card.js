@@ -18,7 +18,10 @@ const Card = (props) => {
                         {price && <h3>{price}</h3>}
                     </article>
                 )}
-                {description && <p>{description}</p>}
+                <article className="specialsBody">
+                    {description && <p>{description}</p>}
+                    <p><strong>Order a delivery</strong></p>
+                </article>
             </section>
         )
     );

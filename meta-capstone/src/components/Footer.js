@@ -3,7 +3,7 @@
 const Footer = () => {
     return (
         <footer>
-            <section className= "footerContainer grid">
+            <section className= "container grid">
             <img src="/restaurant.jpg"
             alt="Little Lemon Restaurant" />
             <section className="footerSection">
