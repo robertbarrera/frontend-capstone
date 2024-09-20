@@ -22,7 +22,7 @@ const BookForm = (props) => {
             <form onSubmit={handleSubmit}>
                 <fieldset>
                     <article className='formElement'>
-                        <label htmlFor="date">Choose a Date: </label>
+                        <label htmlFor="date" data-testid="date">Choose a Date: </label>
                         <input
                             id='date'
                             name='date'
@@ -54,7 +54,9 @@ const BookForm = (props) => {
                             id='guests'
                             name='guests'
                             min="1"
+                            max="20"
                             value={guests}
+                            type="number"
                             required
                             onChange={(e) => setGuests(e.target.value)}
                         />
