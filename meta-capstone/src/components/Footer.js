@@ -1,8 +1,8 @@
-
+import { Link } from "react-router-dom";
 
 const Footer = () => {
     return (
-        <footer>
+        <footer className="grnBG">
             <section className= "container grid">
             <img src="/restaurant.jpg"
             alt="Little Lemon Restaurant" />
@@ -10,12 +10,12 @@ const Footer = () => {
                 <h3>Doormat Navigation</h3>
                 <nav>
                     <ul className="footerList">
-                        <li><a href="/home" className="link">Home</a></li>
-                        <li><a href="/about" className="link">About</a></li>
-                        <li><a href="/blog" className="link">Menu</a></li>
-                        <li><a href="/reservations" className="link">Reservations</a></li>
-                        <li><a href="/order" className="link">Order Online</a></li>
-                        <li><a href="/login" className="link">Login</a></li>
+                        <li><Link to="/" className="link">Home</Link></li>
+                        <li><Link to="/about" className="link">About</Link></li>
+                        <li><Link to="/menu" className="link">Menu</Link></li>
+                        <li><Link to="/bookings" className="link">Reservations</Link></li>
+                        <li><Link to="/order" className="link">Order Online</Link></li>
+                        <li><Link to="/login" className="link">Login</Link></li>
                     </ul>
                 </nav>
             </section>

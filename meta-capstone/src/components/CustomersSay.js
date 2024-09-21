@@ -9,6 +9,7 @@ const CustomersSay = () => {
     ];
 
     return (
+        <section className="grnBG">
         <section className="reviewContainer">
             <h2>Testimonials</h2>
             <section className="reviews grid">
@@ -24,6 +25,7 @@ const CustomersSay = () => {
                     </article>
                 ))}
             </section>
+        </section>
         </section>
     );
 };

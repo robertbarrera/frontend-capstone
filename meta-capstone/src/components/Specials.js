@@ -1,4 +1,5 @@
 import Card from "./Card";
+import { Link } from "react-router-dom";
 
 const Specials = () => {
     const foods = [
@@ -17,7 +18,7 @@ const Specials = () => {
         <section className="specialsContainer">
             <section className="specialsHead">
             <h2>This Weeks Specials!</h2>
-            <button className="specialsButton">Online Menu</button>
+            <Link to="/menu" className="link"><button className="button">Online Menu</button></Link>
             </section>
             <section className="foods grid">
                 {foods.map(food => (

@@ -17,9 +17,9 @@ const BookForm = (props) => {
     };
 
     return (
-        <section className='bookForm'>
-            <h1>Make a Reservation:</h1>
-            <form onSubmit={handleSubmit}>
+        <section className='form grnBG'>
+            <h1 className='smallH'>Make a Reservation:</h1>
+            <form onSubmit={handleSubmit} className='bookForm'>
                 <fieldset>
                     <article className='formElement'>
                         <label htmlFor="date" data-testid="date">Choose a Date: </label>
@@ -79,7 +79,7 @@ const BookForm = (props) => {
                     </article>
 
                     <article>
-                        <input type='submit' className='formButton' value='Reserve Now' />
+                        <input type='submit' className='button' value='Reserve Now' aria-label="On Click"/>
                     </article>
                 </fieldset>
             </form>

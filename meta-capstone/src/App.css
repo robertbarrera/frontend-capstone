@@ -31,9 +31,17 @@ img {
   height: 20rem;
 }
 
+p {
+  line-height: 1.5;
+}
+
 .bg {
   background-color: #EDEFEE;
   border-radius: 1.6rem;
+}
+
+.grnBG {
+  background-color: #495E57;
 }
 
 .reviewContainer {
@@ -42,8 +50,8 @@ img {
   align-items: center; /* Center the contents horizontally */
   justify-content: center;
   width: 73%;
-  padding-top: 10rem;
-  margin: 0 auto;
+  padding: 5rem 0;
+  margin: 5rem auto 0rem;
 }
 
 .container {
@@ -74,7 +82,7 @@ img {
   padding: 1rem 2rem;
 }
 
-button {
+.button {
   color: black;
   background-color: #f4ce14;
   border-radius: 16px;
@@ -108,7 +116,6 @@ header img {
 }
 
 .hero {
-  background-color: #495E57;
   color: white;
   font-size: 1.6rem;
   line-height: 1.5;
@@ -150,12 +157,17 @@ header img {
   width: 100%; /* Take full width of the container */ /*ADJUST ME FOR REVIEW GRID CARDS*/
 }
 
+.reviewContainer h2 {
+  color: white;
+}
+
 .reviewCard, .specialsCard {
   width: 100%; /* Allow the card to take up full width of the grid cell */
   max-width: 20rem; /* Set a maximum width for the card */
   margin: 0 auto; /* Center each card in its column */
   border-radius: 1.6rem;
   text-align: center;
+  height: 100%;
 }
 
 .specialsContainer {
@@ -170,7 +182,7 @@ header img {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 3rem 0;
+  padding: 2rem 0;
 }
 
 .specialsBody {
@@ -187,6 +199,20 @@ header img {
   object-fit: cover;
 }
 
+.cardBottom {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.cardBottom img {
+  position: relative;
+  object-fit: contain;
+  height: 2rem;
+  width: 40%;
+  right: 17%;
+}
+
 .foods {
   display: flex;
   justify-content: space-between;
@@ -195,11 +221,38 @@ header img {
 }
 
 .about {
-  margin: 2rem 0;
+  margin: 5rem 0;
+  padding-bottom: 50px;
+  width: 100%;
+}
+
+
+.about .text{
+  padding: 0 50px 0 0;
+  max-width: 65ch; /* Limits the text to approximately 65 characters per line */
+  overflow-wrap: break-word;
+}
+
+.ma1 {
+  object-fit: cover;
+  width: 25rem;
+  height: 30rem;
+  position: relative;
+  right: 25%;
+  top: 80px;
+  object-position: right
+}
+
+.ma2 {
+  object-fit: cover;
+  width: 25rem;
+  height: 30rem;
+  position: relative;
+  right: 40%;
+  bottom: 40px;
 }
 
 footer {
-  background-color: #495E57;
   color: white;
 }
 
@@ -234,13 +287,68 @@ footer .link {
   color: white;
 }
 
+.form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  margin: 1rem auto 2rem;
+  padding: 20px;
+}
+
+.bookForm {
+  text-align: center;
+}
+
+.formElement {
+  display: flex;
+  align-items: center; /* Aligns items vertically centered */
+  gap: 10px; /* Space between label and input */
+  margin: 1rem 0;
+  padding-right: 25%;
+}
+
+.formElement label {
+  color: white;
+  flex: 1;
+  text-align: right; /* Aligns label text to the right */
+  padding-right: 10px; /* Adds space between label and input */
+}
+
+.formElement input,
+.formElement select {
+  flex: 1; /* Allows input elements to take more space compared to the label */
+  padding: 5px;
+}
+
+.bookForm input[type="submit"] {
+  width: auto; /* Keeps the submit button from shrinking */
+  margin: 2rem;
+}
+
+.confirm {
+  text-align: center;
+  justify-content: center;
+  border-radius: 16px;
+  padding: 2rem;
+}
+
+.confirm h2 {
+  padding: 2rem;
+}
+
+.confirm h1 {
+  border-radius: 16px 16px 0 0;
+}
+
 
 /* Media Queries for more specific mobile responsiveness */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   .container{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 90%;
     justify-content: center;
     align-items: center;
   }
@@ -305,6 +413,15 @@ footer .link {
     display: none;
   }
 
+  .about .text {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .about img {
+    display: none;
+  }
+
   footer {
     justify-items: center;
   }
@@ -322,6 +439,11 @@ footer .link {
     padding: 5px 0px;
     text-align: center;
   }
+
+  .smallH {
+    font-size: 3.5rem;
+  }
+
 }
 
 /**********fix footer responsiveness from 602-718px ***********/
