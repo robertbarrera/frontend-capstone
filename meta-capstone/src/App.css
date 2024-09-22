@@ -35,6 +35,7 @@ p {
   line-height: 1.5;
 }
 
+/********** GENERAL CLASS STYLING **********/
 .bg {
   background-color: #EDEFEE;
   border-radius: 1.6rem;
@@ -47,7 +48,7 @@ p {
 .reviewContainer {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center the contents horizontally */
+  align-items: center;
   justify-content: center;
   width: 73%;
   padding: 5rem 0;
@@ -95,6 +96,8 @@ button:hover {
   cursor: pointer;
 }
 
+
+/********** HEADER AND NAV STYLING **********/
 header {
   background-color: white;
   display: flex;
@@ -119,6 +122,7 @@ header img {
   height: 7rem;
 }
 
+/********** HERO BANNER **********/
 .hero {
   color: white;
   font-size: 1.6rem;
@@ -153,12 +157,13 @@ header img {
   top: 50px;
 }
 
+/********** REVIEW SECTION **********/
 .reviews {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* Ensure 3 equal columns */
   gap: 1rem;
-  margin: 0; /* Remove any margin */
-  width: 100%; /* Take full width of the container */ /*ADJUST ME FOR REVIEW GRID CARDS*/
+  margin: 0;
+  width: 100%; /*ADJUST ME FOR REVIEW GRID CARDS*/
 }
 
 .reviewContainer h2 {
@@ -166,14 +171,15 @@ header img {
 }
 
 .reviewCard, .specialsCard {
-  width: 100%; /* Allow the card to take up full width of the grid cell */
-  max-width: 20rem; /* Set a maximum width for the card */
-  margin: 0 auto; /* Center each card in its column */
+  width: 100%;
+  max-width: 20rem;
+  margin: 0 auto;
   border-radius: 1.6rem;
   text-align: center;
   height: 100%;
 }
 
+/********** FOOD MENU CARDS AND REVIEW CARDS **********/
 .specialsContainer {
   display: flex;
   flex-direction: column;
@@ -224,16 +230,16 @@ header img {
   padding: 0;
 }
 
+/********** ABOUT SECTION **********/
 .about {
   margin: 5rem 0;
   padding-bottom: 50px;
   width: 100%;
 }
 
-
 .about .text{
   padding: 0 50px 0 0;
-  max-width: 65ch; /* Limits the text to approximately 65 characters per line */
+  max-width: 65ch; /* Limit the text to 65 characters per line */
   overflow-wrap: break-word;
 }
 
@@ -256,6 +262,8 @@ header img {
   bottom: 40px;
 }
 
+
+/********** FOOTER **********/
 footer {
   color: white;
 }
@@ -291,6 +299,8 @@ footer .link {
   color: white;
 }
 
+
+/*****BOOKINGS STYLING FOR FORM AND CONFIRMATION PAGE*****/
 .form {
   text-align: center;
   display: flex;
@@ -307,7 +317,7 @@ footer .link {
 
 .formElement {
   display: flex;
-  align-items: center; /* Aligns items vertically centered */
+  align-items: center;
   gap: 10px; /* Space between label and input */
   margin: 1rem 0;
   padding-right: 25%;
@@ -322,12 +332,12 @@ footer .link {
 
 .formElement input,
 .formElement select {
-  flex: 1; /* Allows input elements to take more space compared to the label */
+  flex: 1; /* input elements take more space compared to the label */
   padding: 5px;
 }
 
 .bookForm input[type="submit"] {
-  width: auto; /* Keeps the submit button from shrinking */
+  width: auto;
   margin: 2rem;
 }
 
@@ -449,5 +459,3 @@ footer .link {
   }
 
 }
-
-/**********fix footer responsiveness from 602-718px ***********/

@@ -1,9 +1,9 @@
 const Login = () => {
     return (
         <>
-            <h1>
-                placeholder login data to test rendering.
-            </h1>
+            <h2>
+                Placeholder text for Login section to confirm correct routing and to test rendering.
+            </h2>
         </>
     );
 }
